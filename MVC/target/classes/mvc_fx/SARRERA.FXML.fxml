@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="101.0" prefWidth="700.0" style="-fx-background-color: #1b457e;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="108.0" prefWidth="196.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="200.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/Erronka/miguel%20altuna.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="215.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sarrera" wrappingWidth="254.13671875">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="394.0" prefWidth="704.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="479.0" layoutY="299.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: #00007A;" text="PIEZAK" />
+            <Button accessibleRole="CHECK_BOX" layoutX="24.0" layoutY="299.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: #00007A;" text="ERABILTZAILEAK">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="255.0" layoutY="299.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: #00007A;" text="MAKINAK" />
+            <Text fill="#00007a" layoutX="265.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Miguel Altuna" wrappingWidth="168.53678607940674">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="197.0" fitWidth="397.0" layoutX="183.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Erronka/Sarrera.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
