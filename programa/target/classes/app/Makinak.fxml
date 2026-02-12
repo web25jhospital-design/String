@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:controller="app.controller.MenuController" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="32.0" layoutY="40.0" onAction="#abrirMakinak" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #00007A;" text="Makina" textFill="WHITE">
+               <font><Font name="System Bold" size="14.0" /></font>
+            </Button>
+            <Button layoutX="32.0" layoutY="104.0" onAction="#abrirPiezak" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #00007A;" text="Pieza" textFill="WHITE">
+               <font><Font name="System Bold" size="14.0" /></font>
+            </Button>
+
+            <TableView layoutX="219.0" layoutY="13.0" prefHeight="250.0" prefWidth="450.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Id_makina" />
+                  <TableColumn prefWidth="100.0" text="Izena" />
+                  <TableColumn prefWidth="150.0" text="Deskribapena" />
+               </columns>
+            </TableView>
+
+            <Button layoutX="219.0" layoutY="286.0" onAction="#abrirMakinakEzabatu" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #00007A;" text="EZABATU" textFill="WHITE">
+               <font><Font name="System Bold" size="14.0" /></font>
+            </Button>
+            
+            <Button layoutX="374.0" layoutY="286.0" onAction="#abrirMakinakAldatu" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #00007A;" text="ALDATU" textFill="WHITE">
+               <font><Font name="System Bold" size="14.0" /></font>
+            </Button>
+            
+            <Button layoutX="529.0" layoutY="286.0" onAction="#abrirMakinakGehitu" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #00007A;" text="GEHITU" textFill="WHITE">
+               <font><Font name="System Bold" size="14.0" /></font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
