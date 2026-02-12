@@ -8,6 +8,7 @@ import java.sql.SQLException;
 public class Irakurri_piezak {
 
     public static void main(String[] args) {
+
         String lerroa;
         Connection cn = null;
 
@@ -16,28 +17,46 @@ public class Irakurri_piezak {
             DBkonexioa konex = new DBkonexioa();
             cn = konex.konektatu();
 
-            br.readLine(); // Goiburua saltatzeko
+            br.readLine(); // Saltar cabecera
 
-            String kontsulta = "INSERT INTO PIEZAK VALUES(?,?,?,?,?,?)";
-            PreparedStatement agindua = cn.prepareStatement(kontsulta);
+            String sql = "INSERT INTO PIEZA "
+                    + "(Id_pieza, Id_pieza_mota, Izena, Deskribapena, Pisua, prezioa, stock) "
+                    + "VALUES (?,?,?,?,?,?,?)";
 
-            // != null esan nahi du, ejekutatu egingo dela irakurtzeko lerroak dauden bitartean
-            // .csv-ko lerroak irakurtzen ditu amaierararte
+            PreparedStatement ps = cn.prepareStatement(sql);
+
             while ((lerroa = br.readLine()) != null) {
+
                 String[] datuak = lerroa.split(",");
-                System.out.println(datuak[0] + "-" + datuak[1] + "-" + datuak[2] + "-" + datuak[3] + "-" + datuak[4] + "-" + datuak[5]);
 
-                agindua.setInt(1, Integer.parseInt(datuak[0]));
-                agindua.setString(2, datuak[1]);
-                agindua.setString(3, datuak[2]);
-                agindua.setInt(4, Integer.parseInt(datuak[3]));
-                agindua.setInt(5, Integer.parseInt(datuak[4]));
-                agindua.setInt(6, Integer.parseInt(datuak[5]));
+                // Seguridad: comprobar número de columnas
+                if (datuak.length != 7) {
+                    System.out.println("Errorea: lerro honek ez ditu 7 zutabe -> " + lerroa);
+                    continue;
+                }
 
-                agindua.executeUpdate();
+                System.out.println(
+                        datuak[0] + "-" +
+                        datuak[1] + "-" +
+                        datuak[2] + "-" +
+                        datuak[3] + "-" +
+                        datuak[4] + "-" +
+                        datuak[5] + "-" +
+                        datuak[6]
+                );
+
+                ps.setString(1, datuak[0]); // Id_pieza (VARCHAR)
+                ps.setString(2, datuak[1]); // Id_pieza_mota (VARCHAR)
+                ps.setString(3, datuak[2]); // Izena
+                ps.setString(4, datuak[3]); // Deskribapena
+                ps.setString(5, datuak[4]); // Pisua
+                ps.setInt(6, Integer.parseInt(datuak[5])); // prezioa
+                ps.setInt(7, Integer.parseInt(datuak[6])); // stock
+
+                ps.executeUpdate();
             }
 
-            agindua.close();
+            ps.close();
 
         } catch (SQLException e) {
             System.out.println("Errorea datuak sartzean.");
@@ -45,6 +64,8 @@ public class Irakurri_piezak {
 
         } catch (IOException e) {
             System.out.println("Errorea fitxategia irakurtzean.");
+            e.printStackTrace();
+
         } finally {
             if (cn != null) {
                 try {

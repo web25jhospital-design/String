@@ -24,39 +24,27 @@
                   <Pane layoutX="-2.0" layoutY="7.0" prefHeight="414.0" prefWidth="700.0" style="-fx-background-color: #EBE8E8;">
                      <children>
                         <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id_makina" wrappingWidth="91.84918212890625">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
+                           <font><Font size="18.0" /></font>
                         </Text>
                         <TextArea fx:id="idField" layoutX="138.0" layoutY="15.0" prefHeight="36.0" prefWidth="391.0" />
                         <Text layoutX="14.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Izena" wrappingWidth="91.84918212890625">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
+                           <font><Font size="18.0" /></font>
                         </Text>
                         <TextArea fx:id="izenaField" layoutX="138.0" layoutY="79.0" prefHeight="36.0" prefWidth="391.0" />
                         <Text layoutX="14.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deskribapena" wrappingWidth="109.44915771484375">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
+                           <font><Font size="18.0" /></font>
                         </Text>
                         <TextArea fx:id="deskribapenaField" layoutX="138.0" layoutY="150.0" prefHeight="36.0" prefWidth="391.0" />
                         <Text layoutX="14.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potentzia" wrappingWidth="109.44915771484375">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
+                           <font><Font size="18.0" /></font>
                         </Text>
                         <TextArea fx:id="potentziaField" layoutX="139.0" layoutY="219.0" prefHeight="36.0" prefWidth="391.0" />
                         <Text layoutX="18.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instalazio data" wrappingWidth="82.24911499023438">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
+                           <font><Font size="18.0" /></font>
                         </Text>
                         <TextArea fx:id="dataField" layoutX="138.0" layoutY="285.0" prefHeight="36.0" prefWidth="391.0" />
                         <Button layoutX="136.0" layoutY="349.0" mnemonicParsing="false" onAction="#gehituMakina" prefHeight="41.0" prefWidth="397.0" style="-fx-background-color: #00007A;" text="Gehitu" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="14.0" />
-                           </font>
+                           <font><Font name="System Bold" size="14.0" /></font>
                         </Button>
                      </children>
                   </Pane>

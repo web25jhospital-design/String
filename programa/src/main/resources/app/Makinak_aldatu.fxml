@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.MakinakAldatuKontrolatzailea">
+   <children>
+      <AnchorPane prefHeight="560.0" prefWidth="702.0">
+         <children>
+            <Text fill="#00007a" layoutX="23.0" layoutY="50.0" text="Makina Aldatu">
+               <font><Font name="System Bold" size="24.0" /></font>
+            </Text>
+            <Line endX="599.0" layoutX="101.0" layoutY="77.0" startX="-100.0" />
+            <AnchorPane layoutY="76.0" prefHeight="424.0" prefWidth="700.0">
+               <children>
+                  <Pane layoutX="-2.0" layoutY="7.0" prefHeight="414.0" prefWidth="700.0" style="-fx-background-color: #EBE8E8;">
+                     <children>
+                        <Text layoutX="14.0" layoutY="40.0" text="Id_makina (Ezin da aldatu)"><font><Font size="18.0" /></font></Text>
+                        <TextArea fx:id="idField" layoutX="240.0" layoutY="15.0" prefHeight="36.0" prefWidth="289.0" promptText="Sartu aldatu nahi duzun ID-a" />
+                        
+                        <Text layoutX="14.0" layoutY="106.0" text="Izena berria"><font><Font size="18.0" /></font></Text>
+                        <TextArea fx:id="izenaField" layoutX="138.0" layoutY="79.0" prefHeight="36.0" prefWidth="391.0" />
+
+                        <Text layoutX="14.0" layoutY="176.0" text="Deskribapena"><font><Font size="18.0" /></font></Text>
+                        <TextArea fx:id="deskribapenaField" layoutX="138.0" layoutY="150.0" prefHeight="36.0" prefWidth="391.0" />
+
+                        <Text layoutX="14.0" layoutY="245.0" text="Potentzia"><font><Font size="18.0" /></font></Text>
+                        <TextArea fx:id="potentziaField" layoutX="139.0" layoutY="219.0" prefHeight="36.0" prefWidth="391.0" />
+
+                        <Text layoutX="18.0" layoutY="290.0" text="Data"><font><Font size="18.0" /></font></Text>
+                        <TextArea fx:id="dataField" layoutX="138.0" layoutY="285.0" prefHeight="36.0" prefWidth="391.0" />
+
+                        <Button layoutX="136.0" layoutY="349.0" mnemonicParsing="false" onAction="#aldatuMakina" prefHeight="41.0" prefWidth="397.0" style="-fx-background-color: #00007A;" text="GORDE ALDAKETAK" textFill="WHITE">
+                           <font><Font name="System Bold" size="14.0" /></font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

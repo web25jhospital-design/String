@@ -15,50 +15,40 @@ import javafx.scene.control.TextArea;
 public class MakinaKontrolatzailea_delete {
 
     @FXML private TextArea idField;
-    @FXML private TextArea izenaField;
-    @FXML private TextArea deskribapenaField;
-    @FXML private TextArea potentziaField;
-    @FXML private TextArea dataField;
 
     @FXML
-    private void ezabatuMakina(ActionEvent event) throws IOException {
-
+    public void ezabatuMakina(ActionEvent event) {
         String idText = idField.getText().trim();
 
         if (idText.isEmpty()) {
-            mostrarAlerta("Kontuz!", "Ezabatzeko makina baten ID-a sartu behar duzu.");
+            mostrarAlerta("Kontuz", "Sartu ID bat ezabatzeko.");
             return;
         }
 
         String sql = "DELETE FROM makinak WHERE id_makina = ?";
 
         try (Connection cn = DBKonexioa.konektatu();
-             PreparedStatement agindua = cn.prepareStatement(sql)) {
+             PreparedStatement ps = cn.prepareStatement(sql)) {
 
-            int id_makina = Integer.parseInt(idText);
-            agindua.setInt(1, id_makina);
+            ps.setInt(1, Integer.parseInt(idText));
+            int filas = ps.executeUpdate();
 
-            int filasBorradas = agindua.executeUpdate();
-
-            if (filasBorradas > 0) {
-                mostrarAlerta("Ondo", "ID " + id_makina + " duen makina zuzen ezabatu da.");
-
-                idField.clear();
-                izenaField.clear();
-                deskribapenaField.clear();
-                potentziaField.clear();
-                dataField.clear();
-
-                App.setRoot("secondary");
+            if (filas > 0) {
+                mostrarAlerta("Ondo", "Makina ezabatu da.");
+                App.setRoot("Makinak");
             } else {
-                mostrarAlerta("Kontuz", "Ez da existitzen ID " + id_makina + " duen makina.");
+                mostrarAlerta("Errorea", "Ez da aurkitu ID hori.");
             }
 
-        } catch (NumberFormatException e) {
-            mostrarAlerta("Errorea", "ID-a zenbaki oso bat izan behar da.");
-        } catch (SQLException e) {
-            mostrarAlerta("Datu basearen errorea", e.getMessage());
+        } catch (SQLException | IOException | NumberFormatException e) {
+            mostrarAlerta("Errorea", e.getMessage());
+            e.printStackTrace();
         }
+    }
+
+    @FXML
+    public void itzuli(ActionEvent event) throws IOException {
+        App.setRoot("Makinak");
     }
 
     private void mostrarAlerta(String titulo, String mensaje) {
