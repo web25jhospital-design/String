@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="747.0" prefWidth="700.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="app.controller.ErabiltzaileaKontrolatzailea">
+
+    <left>
+        <AnchorPane>
+
+            <children>
+                <Text layoutX="27" layoutY="49" text="Erabiltzaile berria">
+                    <font>
+                        <Font size="24"/>
+                    </font>
+                </Text>
+
+                <Line layoutX="101" layoutY="77" startX="-100" endX="599"/>
+
+                <Pane layoutY="80" prefWidth="700" prefHeight="603"
+                      style="-fx-background-color: #EBE8E8;">
+                    <children>
+
+                        <Text layoutX="23" layoutY="40" text="Id"/>
+                        <TextArea fx:id="idErab" layoutX="154" layoutY="15" prefWidth="391"/>
+
+                        <Text layoutX="23" layoutY="106" text="Izena"/>
+                        <TextArea fx:id="izenaErab" layoutX="154" layoutY="80" prefWidth="391"/>
+
+                        <Text layoutX="22" layoutY="176" text="Abizena"/>
+                        <TextArea fx:id="abizenaErab" layoutX="154" layoutY="150" prefWidth="391"/>
+
+                        <Text layoutX="22" layoutY="245" text="Nan"/>
+                        <TextArea fx:id="nanErab" layoutX="154" layoutY="219" prefWidth="391"/>
+
+                        <Text layoutX="23" layoutY="315" text="Helbidea"/>
+                        <TextArea fx:id="helbideaErab" layoutX="154" layoutY="289" prefWidth="391"/>
+
+                        <Text layoutX="20" layoutY="382" text="Posta kodea"/>
+                        <TextArea fx:id="postaKodeaErab" layoutX="154" layoutY="356" prefWidth="391"/>
+
+                        <Text layoutX="22" layoutY="439" text="Email"/>
+                        <TextArea fx:id="emailErab" layoutX="154" layoutY="419" prefWidth="391"/>
+
+                        <Text layoutX="22" layoutY="507" text="Alta data"/>
+                        <TextArea fx:id="altaDataErab" layoutX="154" layoutY="481" prefWidth="391"/>
+
+                        <Text layoutX="17" layoutY="568" text="Jaiotze data"/>
+                        <TextArea fx:id="jaiotzeDataErab" layoutX="154" layoutY="542" prefWidth="391"/>
+
+                    </children>
+                </Pane>
+
+                <Button layoutX="136" layoutY="700"
+                        text="Gehitu"
+                        onAction="#gehituErabiltzailea"
+                        prefWidth="397"/>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
+

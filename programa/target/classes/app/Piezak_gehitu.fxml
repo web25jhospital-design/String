@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.PiezaKontrolatzailea">
+   <left>
+      <AnchorPane prefHeight="560.0" prefWidth="702.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#00007a" layoutX="23.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pieza berria" wrappingWidth="168.53678607940674">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Line endX="599.0" endY="1.52587890625E-5" layoutX="101.0" layoutY="77.0" startX="-100.0" />
+            <AnchorPane layoutY="76.0" prefHeight="424.0" prefWidth="700.0">
+               <children>
+                  <Pane layoutY="5.0" prefHeight="414.0" prefWidth="700.0" style="-fx-background-color: #EBE8E8;">
+                     <children>
+                        <Text layoutX="23.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id_pieza" wrappingWidth="91.84918212890625">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="idPieza" layoutX="154.0" layoutY="15.0" prefHeight="36.0" prefWidth="391.0" />
+                        <Text layoutX="23.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Izena" wrappingWidth="91.84918212890625">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="izenaPieza" layoutX="154.0" layoutY="80.0" prefHeight="36.0" prefWidth="391.0" />
+                        <Text layoutX="22.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deskribapena" wrappingWidth="109.44915771484375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="deskribapenaPieza" layoutX="154.0" layoutY="150.0" prefHeight="36.0" prefWidth="391.0" />
+                        <Text layoutX="22.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pisua_gramo" wrappingWidth="109.44915771484375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="pisuaPieza" layoutX="155.0" layoutY="219.0" prefHeight="36.0" prefWidth="391.0" />
+                        <Text layoutX="22.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prezioa" wrappingWidth="82.24911499023438">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="prezioaPieza" layoutX="155.0" layoutY="289.0" prefHeight="36.0" prefWidth="391.0" />
+                        <Text layoutX="22.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock" wrappingWidth="82.24911499023438">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="stockPieza" layoutX="154.0" layoutY="356.0" prefHeight="36.0" prefWidth="391.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <Button layoutX="136.0" layoutY="500.0" mnemonicParsing="false" onAction="#gehituPieza" prefHeight="41.0" prefWidth="397.0" style="-fx-background-color: #00007A;" text="Gehitu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
