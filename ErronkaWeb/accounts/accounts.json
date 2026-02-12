@@ -1,0 +1,102 @@
+[
+   {
+      "username":"123",
+      "password": "123"
+   },
+   {
+      "id": "01",
+      "username": "jon",
+      "Izena": "Jon",
+      "Abizena1": "Garmendia",
+      "Nan": "12345678A",
+      "Helbidea": "Kale Nagusia 1",
+      "Posta Kodea": "20001",
+      "Email": "jon@email.com",
+      "Jaiotze data": "1990-05-15",
+      "password": "123"
+   },
+   {
+      "id": "02",
+      "username": "ane",
+      "Izena": "Ane",
+      "Abizena1": "Agirre",
+      "Nan": "87654321B",
+      "Helbidea": "Zubia Kalea 4",
+      "Posta Kodea": "48002",
+      "Email": "ane@email.com",
+      "Jaiotze data": "1985-11-20",
+      "password": "123"
+   },
+   {
+      "id": "03",
+      "username": "mikel",
+      "Izena": "Mikel",
+      "Abizena1": "Lasa",
+      "Nan": "11223344C",
+      "Helbidea": "Foru Plaza 12",
+      "Posta Kodea": "20005",
+      "Email": "mikel@email.com",
+      "Jaiotze data": "1998-03-30",
+      "password": "123"
+   },
+   {
+      "id": "04",
+      "username": "carlos",
+      "Izena": "Carlos",
+      "Abizena1": "Rodriguez",
+      "Nan": "44556677D",
+      "Helbidea": "Urbieta Kalea 15",
+      "Posta Kodea": "20006",
+      "Email": "carlos.rod@email.com",
+      "Jaiotze data": "1992-08-12",
+      "password": "123"
+   },
+   {
+      "id": "05",
+      "username": "lucia",
+      "Izena": "Lucia",
+      "Abizena1": "Garcia",
+      "Nan": "55667788E",
+      "Helbidea": "Gran Via 22",
+      "Posta Kodea": "48001",
+      "Email": "lucia.garcia@email.com",
+      "Jaiotze data": "1988-01-25",
+      "password": "123"
+   },
+   {
+      "id": "06",
+      "username": "iñigo",
+      "Izena": "Iñigo",
+      "Abizena1": "Fernandez",
+      "Nan": "99887766F",
+      "Helbidea": "Easo Kalea 3",
+      "Posta Kodea": "20010",
+      "Email": "inigo.fer@email.com",
+      "Jaiotze data": "2000-12-05",
+      "password": "123"
+   },
+   {
+       "id": "07",
+      "username": "elena",
+      "Izena": "Elena",
+      "Abizena1": "Martinez",
+      "Nan": "22334455G",
+      "Helbidea": "Ledesma Kalea 7",
+      "Posta Kodea": "48008",
+      "Email": "elena.mtz@email.com",
+      "Jaiotze data": "1995-04-18",
+      "password": "123"
+   },
+   {
+        "id": "08",
+      "username": "javier",
+      "Izena": "Javier",
+      "Abizena1": "Lopez",
+      "Nan": "33445566H",
+      "Helbidea": "San Martin 40",
+      "Posta Kodea": "20005",
+      "Email": "javier.lopez@email.com",
+      "Jaiotze data": "1982-09-30",
+      "password": "123"
+   }
+]
