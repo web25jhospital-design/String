@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="101.0" prefWidth="700.0" style="-fx-background-color: #1b457e;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="108.0" prefWidth="196.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="200.0" layoutX="-2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Pictures/Erronka/miguel%20altuna.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="215.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Erabiltzaileak" wrappingWidth="254.13671875">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="394.0" prefWidth="306.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <AnchorPane prefHeight="394.0" prefWidth="806.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="32.0" layoutY="286.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: #00007A;" text="ALDATU" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="255.0" layoutY="286.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: #00007A;" text="KENDU" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="479.0" layoutY="286.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: #00007A;" text="GEHITU" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView layoutX="197.0" layoutY="14.0" prefHeight="132.0" prefWidth="482.0">
+               <columns>
+                  <TableColumn prefWidth="90.40000915527344" text="Id_erabiltzailea" />
+                  <TableColumn prefWidth="60.0" text="Izena" />
+                  <TableColumn prefWidth="84.79997253417969" text="Abizena1" />
+                  <TableColumn prefWidth="65.5999755859375" text="Nan" />
+                  <TableColumn prefWidth="92.800048828125" text="Helbidea" />
+                  <TableColumn prefWidth="92.800048828125" text="Posta_kodea" />
+               </columns>
+            </TableView>
+            <Button layoutX="32.0" layoutY="104.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #00007A;" text="Pieza" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="32.0" layoutY="170.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #00007A;" text="Erabiltzailea" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="32.0" layoutY="229.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #00007A;" text="Kontsulta" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="32.0" layoutY="40.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #00007A;" text="Makina" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView layoutX="197.0" layoutY="170.0" prefHeight="94.0" prefWidth="229.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Email" />
+                <TableColumn prefWidth="75.0" text="Alta_data" />
+                  <TableColumn prefWidth="75.0" text="Jaiotze_data" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

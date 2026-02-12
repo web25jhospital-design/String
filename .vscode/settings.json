@@ -1,6 +1,9 @@
 {
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "Erronka/lib/mysql-connector-j-9.1.0.jar"
-    ]
+        "c:\\Users\\FELIX.HOSPITAL\\Documents\\String\\String\\Erronka\\lib\\mysql-connector-j-9.1.0.jar"
+    ],
+    "java.project.sourcePaths": [
+        "Erronka\\src"
+    ],
+    "java.project.outputPath": "Erronka\\bin"
 }
